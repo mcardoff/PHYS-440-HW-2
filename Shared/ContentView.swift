@@ -8,9 +8,105 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var quadratic = Quadratic()
+    @State var aString = "1.0"
+    @State var bString = "13.0"
+    @State var cString = "12.0"
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            HStack {
+                Text("Coefficients")
+                    .padding(.top)
+                    .padding(.bottom, 0)
+                VStack {
+                    Text("a")
+                        .padding(.bottom, 0)
+                    TextField("Enter 'a'",
+                              text: $aString,
+                              onCommit: self.calculateRoot)
+                        .padding(.horizontal)
+                        .frame(width: 100)
+                        .padding(.top, 0)
+                        .padding(.bottom, 30)
+                }
+                VStack {
+                    Text("b")
+                        .padding(.bottom, 0)
+                    TextField("Enter 'b'",
+                              text: $bString,
+                              onCommit: self.calculateRoot)
+                        .padding(.horizontal)
+                        .frame(width: 100)
+                        .padding(.top, 0)
+                        .padding(.bottom, 30)
+                }
+                VStack {
+                    Text("c")
+                        .padding(.bottom, 0)
+                    TextField("Enter 'c'",
+                              text: $cString,
+                              onCommit: self.calculateRoot)
+                        .padding(.horizontal)
+                        .frame(width: 100)
+                        .padding(.top, 0)
+                        .padding(.bottom, 30)
+                }
+                
+            }
+            HStack {
+                Text("Roots")
+                    .padding(.top)
+                    .padding(.bottom, 0)
+                VStack {
+                    Text("Root 1")
+                        .padding(.bottom, 0)
+                    TextField("", text: ( $quadratic.root1Text ) )
+                        .padding(.horizontal)
+                        .frame(width: 100)
+                        .padding(.top, 0)
+                        .padding(.bottom, 30)
+                }
+                VStack {
+                    Text("Root 2")
+                        .padding(.bottom, 0)
+                    TextField("", text: ( $quadratic.root2Text ))
+                        .padding(.horizontal)
+                        .frame(width: 100)
+                        .padding(.top, 0)
+                        .padding(.bottom, 30)
+                }
+                VStack {
+                    Text("Root 3")
+                        .padding(.bottom, 0)
+                    TextField("", text: ( $quadratic.root3Text ))
+                        .padding(.horizontal)
+                        .frame(width: 100)
+                        .padding(.top, 0)
+                        .padding(.bottom, 30)
+                }
+                VStack {
+                    Text("Root 4")
+                        .padding(.bottom, 0)
+                    TextField("", text: ( $quadratic.root4Text ))
+                        .padding(.horizontal)
+                        .frame(width: 100)
+                        .padding(.top, 0)
+                        .padding(.bottom, 30)
+                }
+            }
+            Button("Calculate", action: {self.calculateRoot()})
+                .padding(.bottom)
+                .padding()
+                .disabled(quadratic.enableButton == false)
+        }
+    }
+    
+    func calculateRoot() {
+        quadratic.setButtonEnable(state: false)
+        
+        quadratic.setvals(a: Double(aString)!, b: Double(bString)!, c: Double(cString)!)
     }
 }
 
