@@ -19,6 +19,8 @@
 		2C5603AF27A49582009BB96F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C56038427A49582009BB96F /* Assets.xcassets */; };
 		2C5603BF27A499CF009BB96F /* RootSolns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5603BE27A499CF009BB96F /* RootSolns.swift */; };
 		2C5603C027A499CF009BB96F /* RootSolns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5603BE27A499CF009BB96F /* RootSolns.swift */; };
+		2CEBE03E27A4B432004B442E /* AlternatingSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEBE03D27A4B432004B442E /* AlternatingSeries.swift */; };
+		2CEBE03F27A4B432004B442E /* AlternatingSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEBE03D27A4B432004B442E /* AlternatingSeries.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,7 @@
 		2C5603A627A49582009BB96F /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		2C5603A827A49582009BB96F /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		2C5603BE27A499CF009BB96F /* RootSolns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootSolns.swift; sourceTree = "<group>"; };
+		2CEBE03D27A4B432004B442E /* AlternatingSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlternatingSeries.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,7 @@
 			children = (
 				2C56038227A4957F009BB96F /* HW_2App.swift */,
 				2C56038327A4957F009BB96F /* ContentView.swift */,
+				2CEBE03D27A4B432004B442E /* AlternatingSeries.swift */,
 				2C5603BE27A499CF009BB96F /* RootSolns.swift */,
 				2C56038427A49582009BB96F /* Assets.xcassets */,
 			);
@@ -305,6 +309,7 @@
 			files = (
 				2C5603AC27A49582009BB96F /* ContentView.swift in Sources */,
 				2C5603AA27A49582009BB96F /* HW_2App.swift in Sources */,
+				2CEBE03E27A4B432004B442E /* AlternatingSeries.swift in Sources */,
 				2C5603BF27A499CF009BB96F /* RootSolns.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +320,7 @@
 			files = (
 				2C5603AD27A49582009BB96F /* ContentView.swift in Sources */,
 				2C5603AB27A49582009BB96F /* HW_2App.swift in Sources */,
+				2CEBE03F27A4B432004B442E /* AlternatingSeries.swift in Sources */,
 				2C5603C027A499CF009BB96F /* RootSolns.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
