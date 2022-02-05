@@ -15,6 +15,8 @@ class Quadratic: NSObject, ObservableObject{
     @Published var root2Text = ""
     @Published var root3Text = ""
     @Published var root4Text = ""
+    @Published var r1r3Err = ""
+    @Published var r2r4Err = ""
     @Published var enableButton = true
     
     override init () {
@@ -78,10 +80,13 @@ class Quadratic: NSObject, ObservableObject{
     }
     
     func updateRootTexts(rootSet1: (Double, Double), rootSet2: (Double, Double)) {
-        root1Text = String(rootSet1.0)
-        root2Text = String(rootSet1.1)
-        root3Text = String(rootSet2.0)
-        root4Text = String(rootSet2.1)
+        root1Text = String(format: "%7.5e", rootSet1.0)
+        root2Text = String(format: "%7.5e", rootSet1.1)
+        root3Text = String(format: "%7.5e", rootSet2.0)
+        root4Text = String(format: "%7.5e", rootSet2.1)
+        
+        r1r3Err = String(format: "%7.5e", log10(abs(rootSet1.0 - rootSet2.0) / (abs(rootSet1.0) + abs(rootSet2.0))))
+        r2r4Err = String(format: "%7.5e", log10(abs(rootSet1.1 - rootSet2.1) / (abs(rootSet1.1) + abs(rootSet2.1))))
     }
     
     func setButtonEnable(state: Bool){

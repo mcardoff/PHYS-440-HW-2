@@ -19,8 +19,6 @@
 		2C5603AF27A49582009BB96F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C56038427A49582009BB96F /* Assets.xcassets */; };
 		2C5603BF27A499CF009BB96F /* RootSolns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5603BE27A499CF009BB96F /* RootSolns.swift */; };
 		2C5603C027A499CF009BB96F /* RootSolns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5603BE27A499CF009BB96F /* RootSolns.swift */; };
-		2CEBE03E27A4B432004B442E /* AlternatingSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEBE03D27A4B432004B442E /* AlternatingSeries.swift */; };
-		2CEBE03F27A4B432004B442E /* AlternatingSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEBE03D27A4B432004B442E /* AlternatingSeries.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +42,8 @@
 		2C56038227A4957F009BB96F /* HW_2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW_2App.swift; sourceTree = "<group>"; };
 		2C56038327A4957F009BB96F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2C56038427A49582009BB96F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2C56038927A49582009BB96F /* HW 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HW 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C56038F27A49582009BB96F /* HW 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HW 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C56038927A49582009BB96F /* HW 2 Quadratic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HW 2 Quadratic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C56038F27A49582009BB96F /* HW 2 Quadratic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HW 2 Quadratic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C56039127A49582009BB96F /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		2C56039627A49582009BB96F /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C56039A27A49582009BB96F /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
@@ -54,7 +52,6 @@
 		2C5603A627A49582009BB96F /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		2C5603A827A49582009BB96F /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		2C5603BE27A499CF009BB96F /* RootSolns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootSolns.swift; sourceTree = "<group>"; };
-		2CEBE03D27A4B432004B442E /* AlternatingSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlternatingSeries.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +102,6 @@
 			children = (
 				2C56038227A4957F009BB96F /* HW_2App.swift */,
 				2C56038327A4957F009BB96F /* ContentView.swift */,
-				2CEBE03D27A4B432004B442E /* AlternatingSeries.swift */,
 				2C5603BE27A499CF009BB96F /* RootSolns.swift */,
 				2C56038427A49582009BB96F /* Assets.xcassets */,
 			);
@@ -115,8 +111,8 @@
 		2C56038A27A49582009BB96F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2C56038927A49582009BB96F /* HW 2.app */,
-				2C56038F27A49582009BB96F /* HW 2.app */,
+				2C56038927A49582009BB96F /* HW 2 Quadratic.app */,
+				2C56038F27A49582009BB96F /* HW 2 Quadratic.app */,
 				2C56039627A49582009BB96F /* Tests iOS.xctest */,
 				2C5603A227A49582009BB96F /* Tests macOS.xctest */,
 			);
@@ -152,9 +148,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2C56038827A49582009BB96F /* HW 2 (iOS) */ = {
+		2C56038827A49582009BB96F /* HW 2 Quadratic (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C5603B227A49582009BB96F /* Build configuration list for PBXNativeTarget "HW 2 (iOS)" */;
+			buildConfigurationList = 2C5603B227A49582009BB96F /* Build configuration list for PBXNativeTarget "HW 2 Quadratic (iOS)" */;
 			buildPhases = (
 				2C56038527A49582009BB96F /* Sources */,
 				2C56038627A49582009BB96F /* Frameworks */,
@@ -164,14 +160,14 @@
 			);
 			dependencies = (
 			);
-			name = "HW 2 (iOS)";
+			name = "HW 2 Quadratic (iOS)";
 			productName = "HW 2 (iOS)";
-			productReference = 2C56038927A49582009BB96F /* HW 2.app */;
+			productReference = 2C56038927A49582009BB96F /* HW 2 Quadratic.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2C56038E27A49582009BB96F /* HW 2 (macOS) */ = {
+		2C56038E27A49582009BB96F /* HW 2 Quadratic (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C5603B527A49582009BB96F /* Build configuration list for PBXNativeTarget "HW 2 (macOS)" */;
+			buildConfigurationList = 2C5603B527A49582009BB96F /* Build configuration list for PBXNativeTarget "HW 2 Quadratic (macOS)" */;
 			buildPhases = (
 				2C56038B27A49582009BB96F /* Sources */,
 				2C56038C27A49582009BB96F /* Frameworks */,
@@ -181,9 +177,9 @@
 			);
 			dependencies = (
 			);
-			name = "HW 2 (macOS)";
+			name = "HW 2 Quadratic (macOS)";
 			productName = "HW 2 (macOS)";
-			productReference = 2C56038F27A49582009BB96F /* HW 2.app */;
+			productReference = 2C56038F27A49582009BB96F /* HW 2 Quadratic.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2C56039527A49582009BB96F /* Tests iOS */ = {
@@ -248,7 +244,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2C56038027A4957F009BB96F /* Build configuration list for PBXProject "HW 2" */;
+			buildConfigurationList = 2C56038027A4957F009BB96F /* Build configuration list for PBXProject "HW 2 Quadratic" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -261,8 +257,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2C56038827A49582009BB96F /* HW 2 (iOS) */,
-				2C56038E27A49582009BB96F /* HW 2 (macOS) */,
+				2C56038827A49582009BB96F /* HW 2 Quadratic (iOS) */,
+				2C56038E27A49582009BB96F /* HW 2 Quadratic (macOS) */,
 				2C56039527A49582009BB96F /* Tests iOS */,
 				2C5603A127A49582009BB96F /* Tests macOS */,
 			);
@@ -309,7 +305,6 @@
 			files = (
 				2C5603AC27A49582009BB96F /* ContentView.swift in Sources */,
 				2C5603AA27A49582009BB96F /* HW_2App.swift in Sources */,
-				2CEBE03E27A4B432004B442E /* AlternatingSeries.swift in Sources */,
 				2C5603BF27A499CF009BB96F /* RootSolns.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,7 +315,6 @@
 			files = (
 				2C5603AD27A49582009BB96F /* ContentView.swift in Sources */,
 				2C5603AB27A49582009BB96F /* HW_2App.swift in Sources */,
-				2CEBE03F27A4B432004B442E /* AlternatingSeries.swift in Sources */,
 				2C5603C027A499CF009BB96F /* RootSolns.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,12 +342,12 @@
 /* Begin PBXTargetDependency section */
 		2C56039827A49582009BB96F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2C56038827A49582009BB96F /* HW 2 (iOS) */;
+			target = 2C56038827A49582009BB96F /* HW 2 Quadratic (iOS) */;
 			targetProxy = 2C56039727A49582009BB96F /* PBXContainerItemProxy */;
 		};
 		2C5603A427A49582009BB96F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2C56038E27A49582009BB96F /* HW 2 (macOS) */;
+			target = 2C56038E27A49582009BB96F /* HW 2 Quadratic (macOS) */;
 			targetProxy = 2C5603A327A49582009BB96F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -491,7 +485,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "IIT.HW-2";
-				PRODUCT_NAME = "HW 2";
+				PRODUCT_NAME = "HW 2 Quadratic";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -520,7 +514,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "IIT.HW-2";
-				PRODUCT_NAME = "HW 2";
+				PRODUCT_NAME = "HW 2 Quadratic";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -548,7 +542,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "IIT.HW-2";
-				PRODUCT_NAME = "HW 2";
+				PRODUCT_NAME = "HW 2 Quadratic";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -574,7 +568,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "IIT.HW-2";
-				PRODUCT_NAME = "HW 2";
+				PRODUCT_NAME = "HW 2 Quadratic";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -659,7 +653,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2C56038027A4957F009BB96F /* Build configuration list for PBXProject "HW 2" */ = {
+		2C56038027A4957F009BB96F /* Build configuration list for PBXProject "HW 2 Quadratic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C5603B027A49582009BB96F /* Debug */,
@@ -668,7 +662,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C5603B227A49582009BB96F /* Build configuration list for PBXNativeTarget "HW 2 (iOS)" */ = {
+		2C5603B227A49582009BB96F /* Build configuration list for PBXNativeTarget "HW 2 Quadratic (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C5603B327A49582009BB96F /* Debug */,
@@ -677,7 +671,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C5603B527A49582009BB96F /* Build configuration list for PBXNativeTarget "HW 2 (macOS)" */ = {
+		2C5603B527A49582009BB96F /* Build configuration list for PBXNativeTarget "HW 2 Quadratic (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C5603B627A49582009BB96F /* Debug */,

@@ -12,88 +12,90 @@ struct ContentView: View {
     @ObservedObject var quadratic = Quadratic()
     @State var aString = "1.0"
     @State var bString = "1.0"
-    @State var cString = "0.01"
+    @State var cString = "1.0e-10"
     
     var body: some View {
+        
         VStack {
             HStack {
-                Text("Coefficients")
-                    .padding(.top)
-                    .padding(.bottom, 0)
                 VStack {
-                    Text("a")
+                    Text("Coefficients")
+                        .padding(.top)
                         .padding(.bottom, 0)
-                    TextField("Enter 'a'",
-                              text: $aString,
-                              onCommit: self.calculateRoot)
-                        .padding(.horizontal)
-                        .frame(width: 100)
-                        .padding(.top, 0)
-                        .padding(.bottom, 30)
-                }
-                VStack {
-                    Text("b")
-                        .padding(.bottom, 0)
-                    TextField("Enter 'b'",
-                              text: $bString,
-                              onCommit: self.calculateRoot)
-                        .padding(.horizontal)
-                        .frame(width: 100)
-                        .padding(.top, 0)
-                        .padding(.bottom, 30)
-                }
-                VStack {
-                    Text("c")
-                        .padding(.bottom, 0)
-                    TextField("Enter 'c'",
-                              text: $cString,
-                              onCommit: self.calculateRoot)
-                        .padding(.horizontal)
-                        .frame(width: 100)
-                        .padding(.top, 0)
-                        .padding(.bottom, 30)
+                    HStack {
+                        Text("a")
+                        TextField("Enter 'a'",
+                                  text: $aString,
+                                  onCommit: self.calculateRoot)
+                            .frame(width: 100)
+                    }
+                    HStack {
+                        Text("b")
+                        TextField("Enter 'b'",
+                                  text: $bString,
+                                  onCommit: self.calculateRoot)
+                            .frame(width: 100)
+                    }
+                    HStack {
+                        Text("c")
+                            .padding(.bottom, 0)
+                        TextField("Enter 'c'",
+                                  text: $cString,
+                                  onCommit: self.calculateRoot)
+                            .frame(width: 100)
+                    }
+                    
                 }
                 
-            }
-            HStack {
-                Text("Roots")
-                    .padding(.top)
-                    .padding(.bottom, 0)
+                
                 VStack {
-                    Text("Root 1")
+                    Text("Roots")
+                        .padding(.top)
                         .padding(.bottom, 0)
-                    TextField("", text: ( $quadratic.root1Text ) )
-                        .padding(.horizontal)
-                        .frame(width: 100)
-                        .padding(.top, 0)
-                        .padding(.bottom, 30)
+                    HStack {
+                        Text("Root 1")
+                            .padding(.bottom, 0)
+                        TextField("", text: ( $quadratic.root1Text ) )
+                            .frame(width: 150)
+                        
+                    }
+                    HStack {
+                        Text("Root 2")
+                            .padding(.bottom, 0)
+                        TextField("", text: ( $quadratic.root2Text ))
+                            .frame(width: 150)
+                    }
+                    HStack {
+                        Text("Root 3")
+                            .padding(.bottom, 0)
+                        TextField("", text: ( $quadratic.root3Text ))
+                            .frame(width: 150)
+                    }
+                    HStack {
+                        Text("Root 4")
+                            .padding(.bottom, 0)
+                        TextField("", text: ( $quadratic.root4Text ))
+                            .frame(width: 150)
+                    }
                 }
+                
                 VStack {
-                    Text("Root 2")
+                    Text("Log Relative Differences")
+                        .padding(.top)
                         .padding(.bottom, 0)
-                    TextField("", text: ( $quadratic.root2Text ))
-                        .padding(.horizontal)
-                        .frame(width: 100)
-                        .padding(.top, 0)
-                        .padding(.bottom, 30)
-                }
-                VStack {
-                    Text("Root 3")
-                        .padding(.bottom, 0)
-                    TextField("", text: ( $quadratic.root3Text ))
-                        .padding(.horizontal)
-                        .frame(width: 100)
-                        .padding(.top, 0)
-                        .padding(.bottom, 30)
-                }
-                VStack {
-                    Text("Root 4")
-                        .padding(.bottom, 0)
-                    TextField("", text: ( $quadratic.root4Text ))
-                        .padding(.horizontal)
-                        .frame(width: 100)
-                        .padding(.top, 0)
-                        .padding(.bottom, 30)
+                    HStack {
+                        Text("R1 vs R3")
+                            .padding(.bottom, 0)
+                        TextField("", text: ( $quadratic.r1r3Err ) )
+                            .frame(width: 150)
+                        
+                    }
+                    HStack {
+                        Text("R2 vs R4")
+                            .padding(.bottom, 0)
+                        TextField("", text: ( $quadratic.r2r4Err ))
+                            .frame(width: 150)
+                    }
                 }
             }
             Button("Calculate", action: {self.calculateRoot()})
